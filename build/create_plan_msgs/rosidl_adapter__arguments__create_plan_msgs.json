@@ -1,0 +1,6 @@
+{
+  "package_name": "create_plan_msgs",
+  "non_idl_tuples": [
+    "/home/user/exercises_ws/src/packages/create_plan_msgs:srv/CreatePlan.srv"
+  ]
+}

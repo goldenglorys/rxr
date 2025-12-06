@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "create_plan_msgs__py",
+		"source" : "/home/user/exercises_ws/build/create_plan_msgs/create_plan_msgs__py"
+	}
+}

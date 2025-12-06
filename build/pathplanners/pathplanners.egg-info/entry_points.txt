@@ -1,0 +1,6 @@
+[console_scripts]
+bfs = pathplanners.breadthfirstsearch:main
+dijkstra = pathplanners.dijkstra:main
+map_node = pathplanners.map:main
+path_planner_node = pathplanners.nav2_planner:main
+

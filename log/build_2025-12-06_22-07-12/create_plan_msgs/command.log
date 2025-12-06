@@ -1,0 +1,6 @@
+Invoking command in '/home/user/exercises_ws/build/create_plan_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/exercises_ws/src/packages/create_plan_msgs -DCMAKE_INSTALL_PREFIX=/home/user/exercises_ws/install/create_plan_msgs
+Invoked command in '/home/user/exercises_ws/build/create_plan_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/user/exercises_ws/src/packages/create_plan_msgs -DCMAKE_INSTALL_PREFIX=/home/user/exercises_ws/install/create_plan_msgs
+Invoking command in '/home/user/exercises_ws/build/create_plan_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/exercises_ws/build/create_plan_msgs -- -j14 -l14
+Invoked command in '/home/user/exercises_ws/build/create_plan_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/user/exercises_ws/build/create_plan_msgs -- -j14 -l14
+Invoking command in '/home/user/exercises_ws/build/create_plan_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/exercises_ws/build/create_plan_msgs
+Invoked command in '/home/user/exercises_ws/build/create_plan_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/user/exercises_ws/build/create_plan_msgs

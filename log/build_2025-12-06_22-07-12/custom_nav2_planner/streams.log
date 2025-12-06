@@ -1,0 +1,90 @@
+[0.029s] Invoking command in '/home/user/exercises_ws/build/custom_nav2_planner': AMENT_PREFIX_PATH=/home/user/exercises_ws/install/create_plan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/exercises_ws/install/create_plan_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/user/exercises_ws/install/create_plan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/user/exercises_ws/src/packages/custom_nav2_planner -DCMAKE_INSTALL_PREFIX=/home/user/exercises_ws/install/custom_nav2_planner
+[0.163s] -- The C compiler identification is GNU 11.4.0
+[0.272s] -- The CXX compiler identification is GNU 11.4.0
+[0.287s] -- Detecting C compiler ABI info
+[0.454s] -- Detecting C compiler ABI info - done
+[0.465s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.466s] -- Detecting C compile features
+[0.466s] -- Detecting C compile features - done
+[0.471s] -- Detecting CXX compiler ABI info
+[0.664s] -- Detecting CXX compiler ABI info - done
+[0.674s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.675s] -- Detecting CXX compile features
+[0.675s] -- Detecting CXX compile features - done
+[0.682s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.985s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.172s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[1.258s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.272s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.287s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.308s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.336s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.415s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.420s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.456s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.475s] -- Looking for pthread.h
+[1.653s] -- Looking for pthread.h - found
+[1.653s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.821s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.822s] -- Found Threads: TRUE  
+[1.916s] -- Found rclcpp_action: 16.0.15 (/opt/ros/humble/share/rclcpp_action/cmake)
+[1.974s] -- Found rclcpp_lifecycle: 16.0.15 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[2.013s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[2.105s] -- Found nav2_util: 1.1.19 (/opt/ros/humble/share/nav2_util/cmake)
+[2.349s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.351s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.351s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.411s] -- Found nav2_costmap_2d: 1.1.19 (/opt/ros/humble/share/nav2_costmap_2d/cmake)
+[2.572s] -- Found nav2_core: 1.1.19 (/opt/ros/humble/share/nav2_core/cmake)
+[2.590s] -- Found create_plan_msgs: 0.0.0 (/home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake)
+[2.802s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.962s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.963s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.964s] -- Configured cppcheck include dirs: /home/user/exercises_ws/src/packages/custom_nav2_planner/include
+[2.964s] -- Configured cppcheck exclude dirs and/or files: 
+[2.965s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.965s] -- Configured cpplint exclude dirs and/or files: 
+[2.966s] -- Added test 'lint_cmake' to check CMake code style
+[2.967s] -- Added test 'uncrustify' to check C / C++ code style
+[2.968s] -- Configured uncrustify additional arguments: 
+[2.968s] -- Added test 'xmllint' to check XML markup files
+[2.972s] -- Configuring done
+[3.080s] -- Generating done
+[3.093s] -- Build files have been written to: /home/user/exercises_ws/build/custom_nav2_planner
+[3.114s] Invoked command in '/home/user/exercises_ws/build/custom_nav2_planner' returned '0': AMENT_PREFIX_PATH=/home/user/exercises_ws/install/create_plan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/exercises_ws/install/create_plan_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/user/exercises_ws/install/create_plan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/user/exercises_ws/src/packages/custom_nav2_planner -DCMAKE_INSTALL_PREFIX=/home/user/exercises_ws/install/custom_nav2_planner
+[3.117s] Invoking command in '/home/user/exercises_ws/build/custom_nav2_planner': AMENT_PREFIX_PATH=/home/user/exercises_ws/install/create_plan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/exercises_ws/install/create_plan_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/user/exercises_ws/install/create_plan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/exercises_ws/build/custom_nav2_planner -- -j14 -l14
+[3.255s] [ 50%] [32mBuilding CXX object CMakeFiles/custom_nav2_planner_plugin.dir/src/custom_nav2_planner.cpp.o[0m
+[12.236s] [100%] [32m[1mLinking CXX shared library libcustom_nav2_planner_plugin.so[0m
+[12.745s] [100%] Built target custom_nav2_planner_plugin
+[12.768s] Invoked command in '/home/user/exercises_ws/build/custom_nav2_planner' returned '0': AMENT_PREFIX_PATH=/home/user/exercises_ws/install/create_plan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/exercises_ws/install/create_plan_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/user/exercises_ws/install/create_plan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/user/exercises_ws/build/custom_nav2_planner -- -j14 -l14
+[12.771s] Invoking command in '/home/user/exercises_ws/build/custom_nav2_planner': AMENT_PREFIX_PATH=/home/user/exercises_ws/install/create_plan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/exercises_ws/install/create_plan_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/user/exercises_ws/install/create_plan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/exercises_ws/build/custom_nav2_planner
+[12.788s] -- Install configuration: ""
+[12.789s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/global_planner_plugin.xml
+[12.789s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/lib/libcustom_nav2_planner_plugin.so
+[12.792s] -- Set runtime path of "/home/user/exercises_ws/install/custom_nav2_planner/lib/libcustom_nav2_planner_plugin.so" to ""
+[12.792s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/include/
+[12.793s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/include//custom_nav2_planner
+[12.793s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/include//custom_nav2_planner/custom_nav2_planner.hpp
+[12.793s] -- Up-to-date: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/global_planner_plugin.xml
+[12.793s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/environment/library_path.sh
+[12.793s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/environment/library_path.dsv
+[12.793s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/ament_index/resource_index/package_run_dependencies/custom_nav2_planner
+[12.793s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/ament_index/resource_index/parent_prefix_path/custom_nav2_planner
+[12.794s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/environment/ament_prefix_path.sh
+[12.794s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/environment/ament_prefix_path.dsv
+[12.794s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/environment/path.sh
+[12.794s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/environment/path.dsv
+[12.795s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/local_setup.bash
+[12.795s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/local_setup.sh
+[12.796s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/local_setup.zsh
+[12.796s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/local_setup.dsv
+[12.796s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/package.dsv
+[12.797s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/ament_index/resource_index/packages/custom_nav2_planner
+[12.797s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/ament_index/resource_index/nav2_core__pluginlib__plugin/custom_nav2_planner
+[12.797s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/cmake/ament_cmake_export_include_directories-extras.cmake
+[12.797s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/cmake/ament_cmake_export_libraries-extras.cmake
+[12.797s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/cmake/ament_cmake_export_dependencies-extras.cmake
+[12.798s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/cmake/custom_nav2_plannerConfig.cmake
+[12.798s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/cmake/custom_nav2_plannerConfig-version.cmake
+[12.798s] -- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/package.xml
+[12.802s] Invoked command in '/home/user/exercises_ws/build/custom_nav2_planner' returned '0': AMENT_PREFIX_PATH=/home/user/exercises_ws/install/create_plan_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/user/exercises_ws/install/create_plan_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/user/exercises_ws/install/create_plan_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/user/exercises_ws/build/custom_nav2_planner

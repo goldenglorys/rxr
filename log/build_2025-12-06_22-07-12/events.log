@@ -1,0 +1,532 @@
+[0.000000] (-) TimerEvent: {}
+[0.000976] (create_plan_msgs) JobQueued: {'identifier': 'create_plan_msgs', 'dependencies': OrderedDict()}
+[0.001186] (custom_nav2_planner) JobQueued: {'identifier': 'custom_nav2_planner', 'dependencies': OrderedDict([('create_plan_msgs', '/home/user/exercises_ws/install/create_plan_msgs')])}
+[0.001279] (create_plan_msgs) JobStarted: {'identifier': 'create_plan_msgs'}
+[0.021666] (create_plan_msgs) JobProgress: {'identifier': 'create_plan_msgs', 'progress': 'cmake'}
+[0.022558] (create_plan_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/user/exercises_ws/src/packages/create_plan_msgs', '-DCMAKE_INSTALL_PREFIX=/home/user/exercises_ws/install/create_plan_msgs'], 'cwd': '/home/user/exercises_ws/build/create_plan_msgs', 'env': OrderedDict([('PROFILEHOME', ''), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VBOX_CROGL_FORCE_SUPPORTED', '1'), ('KDE_FULL_SESSION', 'true'), ('WEBRTC_ENABLE_RESIZE', 'false'), ('LANGUAGE', 'en_US:en'), ('USER', 'user'), ('SUPERVISOR_GROUP_NAME', 'entrypoint'), ('VGL_ISACTIVE', '1'), ('HOSTNAME', '4dca70f7f8af'), ('XDG_SESSION_TYPE', 'x11'), ('XCURSOR_SIZE', '24'), ('KONSOLE_VERSION', '211203'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/libreoffice/program:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('SHARED_FOLDER', '/home/user'), ('HOME', '/home/user'), ('REFRESH', '60'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('OLDPWD', '/home/user/exercises_ws/src/packages'), ('DESKTOP_SESSION', 'plasma'), ('XIM', 'fcitx'), ('ROS_PYTHON_VERSION', '3'), ('NOVNC_ENABLE', 'true'), ('SHELL_SESSION_ID', '8d6ac2dfb52e4caba4ce824bc7bffcec'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/user/.gtkrc:/home/user/.config/gtkrc'), ('SUDO_EDITOR', 'kate'), ('KDE_SESSION_VERSION', '5'), ('KONSOLE_DBUS_SESSION', '/Sessions/1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-L1H4FozHGd,guid=9202e9bd264c1e9f2802d2b6692b2fb6'), ('COLORTERM', 'truecolor'), ('KONSOLE_DBUS_WINDOW', '/Windows/1'), ('SIZEW', '1920'), ('COLCON_PREFIX_PATH', '/home/user/exercises_ws/install'), ('APPIMAGE_EXTRACT_AND_RUN', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('VGL_DISPLAY', 'egl'), ('WINDOWID', '81788935'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('PULSE_SERVER', 'unix:/run/pulse/native'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('COLORFGBG', '15;0'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/user/.gtkrc-2.0:/home/user/.config/gtkrc-2.0'), ('KWIN_X11_NO_SYNC_TO_VBLANK', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/nvidia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games'), ('SESSION_MANAGER', 'local/4dca70f7f8af:@/tmp/.ICE-unix/202,unix/4dca70f7f8af:/tmp/.ICE-unix/202'), ('DPI', '96'), ('XDG_RUNTIME_DIR', '/tmp/runtime-user'), ('XCURSOR_THEME', 'breeze_cursors'), ('DISPLAY', ':0'), ('PROMAGIC_USEGLX', '1'), ('LD_PRELOAD', 'libdlfaker.so:libvglfaker.so:/usr/local/lib/selkies-js-interposer/joystick_interposer.so'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'KDE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUPERVISOR_ENABLED', '1'), ('__GL_SYNC_TO_VBLANK', '0'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share/andino_gz/models'), ('KONSOLE_DBUS_SERVICE', ':1.297'), ('PASSWD', '47978827'), ('CDEPTH', '24'), ('SDL_JOYSTICK_DEVICE', '/dev/input/js0'), ('QT_IM_MODULE', 'fcitx'), ('SUPERVISOR_PROCESS_NAME', 'entrypoint'), ('PWD', '/home/user/exercises_ws/build/create_plan_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/home/user/.config/kdedefaults:/etc/xdg'), ('VGL_REFRESHRATE', '60'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('VGL_WM', '1'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('KWIN_COMPOSE', 'N'), ('TZ', 'UTC'), ('WEBRTC_ENCODER', 'nvh264enc'), ('KDE_SESSION_UID', '1000'), ('GEOPROBE_USEGLX', '1'), ('COLCON', '1'), ('ENABLE_BASIC_AUTH', 'true'), ('BASIC_AUTH_PASSWORD', '47978827'), ('SIZEH', '1080'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099727] (-) TimerEvent: {}
+[0.159266] (create_plan_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199831] (-) TimerEvent: {}
+[0.272883] (create_plan_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.290384] (create_plan_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299986] (-) TimerEvent: {}
+[0.400436] (-) TimerEvent: {}
+[0.451536] (create_plan_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.465440] (create_plan_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.465866] (create_plan_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.466361] (create_plan_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.472706] (create_plan_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500902] (-) TimerEvent: {}
+[0.601416] (-) TimerEvent: {}
+[0.651728] (create_plan_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.664195] (create_plan_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.664570] (create_plan_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.665486] (create_plan_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.671968] (create_plan_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.701554] (-) TimerEvent: {}
+[0.802000] (-) TimerEvent: {}
+[0.902455] (-) TimerEvent: {}
+[0.910973] (create_plan_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.002576] (-) TimerEvent: {}
+[1.103020] (-) TimerEvent: {}
+[1.132702] (create_plan_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.142369] (create_plan_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.156195] (create_plan_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.176562] (create_plan_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.203209] (-) TimerEvent: {}
+[1.205427] (create_plan_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.266092] (create_plan_msgs) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.291308] (create_plan_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.303322] (-) TimerEvent: {}
+[1.403668] (-) TimerEvent: {}
+[1.504097] (-) TimerEvent: {}
+[1.604561] (-) TimerEvent: {}
+[1.705031] (-) TimerEvent: {}
+[1.795828] (create_plan_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.805153] (-) TimerEvent: {}
+[1.905873] (-) TimerEvent: {}
+[2.006392] (-) TimerEvent: {}
+[2.106865] (-) TimerEvent: {}
+[2.207322] (-) TimerEvent: {}
+[2.307857] (-) TimerEvent: {}
+[2.408340] (-) TimerEvent: {}
+[2.508871] (-) TimerEvent: {}
+[2.539348] (create_plan_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.609022] (-) TimerEvent: {}
+[2.709440] (-) TimerEvent: {}
+[2.809938] (-) TimerEvent: {}
+[2.828865] (create_plan_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.868009] (create_plan_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[2.871522] (create_plan_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.910059] (-) TimerEvent: {}
+[2.921414] (create_plan_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[2.921685] (create_plan_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.921818] (create_plan_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.921924] (create_plan_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.959385] (create_plan_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[3.010201] (-) TimerEvent: {}
+[3.076968] (create_plan_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.110383] (-) TimerEvent: {}
+[3.128077] (create_plan_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[3.145562] (create_plan_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/user/exercises_ws/build/create_plan_msgs\n'}
+[3.158504] (create_plan_msgs) CommandEnded: {'returncode': 0}
+[3.161331] (create_plan_msgs) JobProgress: {'identifier': 'create_plan_msgs', 'progress': 'build'}
+[3.161578] (create_plan_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/exercises_ws/build/create_plan_msgs', '--', '-j14', '-l14'], 'cwd': '/home/user/exercises_ws/build/create_plan_msgs', 'env': OrderedDict([('PROFILEHOME', ''), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VBOX_CROGL_FORCE_SUPPORTED', '1'), ('KDE_FULL_SESSION', 'true'), ('WEBRTC_ENABLE_RESIZE', 'false'), ('LANGUAGE', 'en_US:en'), ('USER', 'user'), ('SUPERVISOR_GROUP_NAME', 'entrypoint'), ('VGL_ISACTIVE', '1'), ('HOSTNAME', '4dca70f7f8af'), ('XDG_SESSION_TYPE', 'x11'), ('XCURSOR_SIZE', '24'), ('KONSOLE_VERSION', '211203'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/libreoffice/program:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('SHARED_FOLDER', '/home/user'), ('HOME', '/home/user'), ('REFRESH', '60'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('OLDPWD', '/home/user/exercises_ws/src/packages'), ('DESKTOP_SESSION', 'plasma'), ('XIM', 'fcitx'), ('ROS_PYTHON_VERSION', '3'), ('NOVNC_ENABLE', 'true'), ('SHELL_SESSION_ID', '8d6ac2dfb52e4caba4ce824bc7bffcec'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/user/.gtkrc:/home/user/.config/gtkrc'), ('SUDO_EDITOR', 'kate'), ('KDE_SESSION_VERSION', '5'), ('KONSOLE_DBUS_SESSION', '/Sessions/1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-L1H4FozHGd,guid=9202e9bd264c1e9f2802d2b6692b2fb6'), ('COLORTERM', 'truecolor'), ('KONSOLE_DBUS_WINDOW', '/Windows/1'), ('SIZEW', '1920'), ('COLCON_PREFIX_PATH', '/home/user/exercises_ws/install'), ('APPIMAGE_EXTRACT_AND_RUN', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('VGL_DISPLAY', 'egl'), ('WINDOWID', '81788935'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('PULSE_SERVER', 'unix:/run/pulse/native'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('COLORFGBG', '15;0'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/user/.gtkrc-2.0:/home/user/.config/gtkrc-2.0'), ('KWIN_X11_NO_SYNC_TO_VBLANK', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/nvidia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games'), ('SESSION_MANAGER', 'local/4dca70f7f8af:@/tmp/.ICE-unix/202,unix/4dca70f7f8af:/tmp/.ICE-unix/202'), ('DPI', '96'), ('XDG_RUNTIME_DIR', '/tmp/runtime-user'), ('XCURSOR_THEME', 'breeze_cursors'), ('DISPLAY', ':0'), ('PROMAGIC_USEGLX', '1'), ('LD_PRELOAD', 'libdlfaker.so:libvglfaker.so:/usr/local/lib/selkies-js-interposer/joystick_interposer.so'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'KDE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUPERVISOR_ENABLED', '1'), ('__GL_SYNC_TO_VBLANK', '0'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share/andino_gz/models'), ('KONSOLE_DBUS_SERVICE', ':1.297'), ('PASSWD', '47978827'), ('CDEPTH', '24'), ('SDL_JOYSTICK_DEVICE', '/dev/input/js0'), ('QT_IM_MODULE', 'fcitx'), ('SUPERVISOR_PROCESS_NAME', 'entrypoint'), ('PWD', '/home/user/exercises_ws/build/create_plan_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/home/user/.config/kdedefaults:/etc/xdg'), ('VGL_REFRESHRATE', '60'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('VGL_WM', '1'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('KWIN_COMPOSE', 'N'), ('TZ', 'UTC'), ('WEBRTC_ENCODER', 'nvh264enc'), ('KDE_SESSION_UID', '1000'), ('GEOPROBE_USEGLX', '1'), ('COLCON', '1'), ('ENABLE_BASIC_AUTH', 'true'), ('BASIC_AUTH_PASSWORD', '47978827'), ('SIZEH', '1080'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.210508] (-) TimerEvent: {}
+[3.257634] (create_plan_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.291435] (create_plan_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.309514] (create_plan_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_create_plan_msgs\n'}
+[3.310586] (-) TimerEvent: {}
+[3.411013] (-) TimerEvent: {}
+[3.511370] (-) TimerEvent: {}
+[3.611832] (-) TimerEvent: {}
+[3.708053] (create_plan_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/create_plan_msgs__rosidl_generator_c.dir/rosidl_generator_c/create_plan_msgs/srv/detail/create_plan__functions.c.o\x1b[0m\n'}
+[3.712121] (-) TimerEvent: {}
+[3.720874] (create_plan_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[3.724270] (create_plan_msgs) StdoutLine: {'line': b'[  9%] Built target create_plan_msgs__cpp\n'}
+[3.724453] (create_plan_msgs) StdoutLine: {'line': b'creating create_plan_msgs.egg-info\n'}
+[3.724556] (create_plan_msgs) StdoutLine: {'line': b'writing create_plan_msgs.egg-info/PKG-INFO\n'}
+[3.724677] (create_plan_msgs) StdoutLine: {'line': b'writing dependency_links to create_plan_msgs.egg-info/dependency_links.txt\n'}
+[3.724779] (create_plan_msgs) StdoutLine: {'line': b'writing top-level names to create_plan_msgs.egg-info/top_level.txt\n'}
+[3.724865] (create_plan_msgs) StdoutLine: {'line': b"writing manifest file 'create_plan_msgs.egg-info/SOURCES.txt'\n"}
+[3.725678] (create_plan_msgs) StdoutLine: {'line': b"reading manifest file 'create_plan_msgs.egg-info/SOURCES.txt'\n"}
+[3.726345] (create_plan_msgs) StdoutLine: {'line': b"writing manifest file 'create_plan_msgs.egg-info/SOURCES.txt'\n"}
+[3.749896] (create_plan_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.750151] (create_plan_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.751683] (create_plan_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.777657] (create_plan_msgs) StdoutLine: {'line': b'[ 19%] Built target ament_cmake_python_build_create_plan_msgs_egg\n'}
+[3.812256] (-) TimerEvent: {}
+[3.831436] (create_plan_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libcreate_plan_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[3.912427] (-) TimerEvent: {}
+[3.931240] (create_plan_msgs) StdoutLine: {'line': b'[ 22%] Built target create_plan_msgs__rosidl_generator_c\n'}
+[3.956580] (create_plan_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.965822] (create_plan_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.967184] (create_plan_msgs) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[4.012594] (-) TimerEvent: {}
+[4.091536] (create_plan_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/create_plan_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/create_plan_msgs/srv/create_plan__type_support.cpp.o\x1b[0m\n'}
+[4.112729] (-) TimerEvent: {}
+[4.141484] (create_plan_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/create_plan_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/create_plan_msgs/srv/detail/create_plan__type_support.cpp.o\x1b[0m\n'}
+[4.181198] (create_plan_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/create_plan_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/create_plan_msgs/srv/detail/dds_fastrtps/create_plan__type_support.cpp.o\x1b[0m\n'}
+[4.212874] (-) TimerEvent: {}
+[4.313390] (-) TimerEvent: {}
+[4.383831] (create_plan_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/create_plan_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/create_plan_msgs/srv/detail/create_plan__type_support.c.o\x1b[0m\n'}
+[4.403492] (create_plan_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/create_plan_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/create_plan_msgs/srv/create_plan__type_support.cpp.o\x1b[0m\n'}
+[4.413518] (-) TimerEvent: {}
+[4.445806] (create_plan_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/create_plan_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/create_plan_msgs/srv/detail/create_plan__type_support_c.cpp.o\x1b[0m\n'}
+[4.467692] (create_plan_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking C shared library libcreate_plan_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.487477] (create_plan_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libcreate_plan_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.513932] (-) TimerEvent: {}
+[4.519195] (create_plan_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libcreate_plan_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.551792] (create_plan_msgs) StdoutLine: {'line': b'[ 61%] Built target create_plan_msgs__rosidl_typesupport_introspection_c\n'}
+[4.595838] (create_plan_msgs) StdoutLine: {'line': b'[ 61%] Built target create_plan_msgs__rosidl_typesupport_c\n'}
+[4.613057] (create_plan_msgs) StdoutLine: {'line': b'[ 61%] Built target create_plan_msgs__rosidl_typesupport_cpp\n'}
+[4.614010] (-) TimerEvent: {}
+[4.714370] (-) TimerEvent: {}
+[4.814865] (-) TimerEvent: {}
+[4.820878] (create_plan_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libcreate_plan_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.828988] (create_plan_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libcreate_plan_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.914992] (-) TimerEvent: {}
+[4.950197] (create_plan_msgs) StdoutLine: {'line': b'[ 67%] Built target create_plan_msgs__rosidl_typesupport_introspection_cpp\n'}
+[4.997249] (create_plan_msgs) StdoutLine: {'line': b'[ 67%] Built target create_plan_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[5.012008] (create_plan_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libcreate_plan_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.015062] (-) TimerEvent: {}
+[5.115411] (-) TimerEvent: {}
+[5.149918] (create_plan_msgs) StdoutLine: {'line': b'[ 70%] Built target create_plan_msgs__rosidl_typesupport_fastrtps_c\n'}
+[5.204964] (create_plan_msgs) StdoutLine: {'line': b'[ 70%] Built target create_plan_msgs\n'}
+[5.215616] (-) TimerEvent: {}
+[5.258082] (create_plan_msgs) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.315793] (-) TimerEvent: {}
+[5.416291] (-) TimerEvent: {}
+[5.516776] (-) TimerEvent: {}
+[5.617302] (-) TimerEvent: {}
+[5.717784] (-) TimerEvent: {}
+[5.766678] (create_plan_msgs) StdoutLine: {'line': b'[ 74%] Built target create_plan_msgs__py\n'}
+[5.817972] (-) TimerEvent: {}
+[5.827336] (create_plan_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/create_plan_msgs__rosidl_generator_py.dir/rosidl_generator_py/create_plan_msgs/srv/_create_plan_s.c.o\x1b[0m\n'}
+[5.918110] (-) TimerEvent: {}
+[6.012774] (create_plan_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/create_plan_msgs/libcreate_plan_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[6.018300] (-) TimerEvent: {}
+[6.115676] (create_plan_msgs) StdoutLine: {'line': b'[ 80%] Built target create_plan_msgs__rosidl_generator_py\n'}
+[6.118546] (-) TimerEvent: {}
+[6.172570] (create_plan_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/create_plan_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/create_plan_msgs/_create_plan_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[6.176019] (create_plan_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/create_plan_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/create_plan_msgs/_create_plan_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.177238] (create_plan_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/create_plan_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/create_plan_msgs/_create_plan_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[6.218743] (-) TimerEvent: {}
+[6.319211] (-) TimerEvent: {}
+[6.363903] (create_plan_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/create_plan_msgs/create_plan_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.370935] (create_plan_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/create_plan_msgs/create_plan_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.377016] (create_plan_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/create_plan_msgs/create_plan_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[6.419729] (-) TimerEvent: {}
+[6.469296] (create_plan_msgs) StdoutLine: {'line': b'[100%] Built target create_plan_msgs__rosidl_typesupport_c__pyext\n'}
+[6.474659] (create_plan_msgs) StdoutLine: {'line': b'[100%] Built target create_plan_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[6.482063] (create_plan_msgs) StdoutLine: {'line': b'[100%] Built target create_plan_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[6.511002] (create_plan_msgs) CommandEnded: {'returncode': 0}
+[6.512981] (create_plan_msgs) JobProgress: {'identifier': 'create_plan_msgs', 'progress': 'install'}
+[6.519807] (-) TimerEvent: {}
+[6.534000] (create_plan_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/exercises_ws/build/create_plan_msgs'], 'cwd': '/home/user/exercises_ws/build/create_plan_msgs', 'env': OrderedDict([('PROFILEHOME', ''), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VBOX_CROGL_FORCE_SUPPORTED', '1'), ('KDE_FULL_SESSION', 'true'), ('WEBRTC_ENABLE_RESIZE', 'false'), ('LANGUAGE', 'en_US:en'), ('USER', 'user'), ('SUPERVISOR_GROUP_NAME', 'entrypoint'), ('VGL_ISACTIVE', '1'), ('HOSTNAME', '4dca70f7f8af'), ('XDG_SESSION_TYPE', 'x11'), ('XCURSOR_SIZE', '24'), ('KONSOLE_VERSION', '211203'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/libreoffice/program:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('SHARED_FOLDER', '/home/user'), ('HOME', '/home/user'), ('REFRESH', '60'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('OLDPWD', '/home/user/exercises_ws/src/packages'), ('DESKTOP_SESSION', 'plasma'), ('XIM', 'fcitx'), ('ROS_PYTHON_VERSION', '3'), ('NOVNC_ENABLE', 'true'), ('SHELL_SESSION_ID', '8d6ac2dfb52e4caba4ce824bc7bffcec'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/user/.gtkrc:/home/user/.config/gtkrc'), ('SUDO_EDITOR', 'kate'), ('KDE_SESSION_VERSION', '5'), ('KONSOLE_DBUS_SESSION', '/Sessions/1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-L1H4FozHGd,guid=9202e9bd264c1e9f2802d2b6692b2fb6'), ('COLORTERM', 'truecolor'), ('KONSOLE_DBUS_WINDOW', '/Windows/1'), ('SIZEW', '1920'), ('COLCON_PREFIX_PATH', '/home/user/exercises_ws/install'), ('APPIMAGE_EXTRACT_AND_RUN', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('VGL_DISPLAY', 'egl'), ('WINDOWID', '81788935'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('PULSE_SERVER', 'unix:/run/pulse/native'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('COLORFGBG', '15;0'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/user/.gtkrc-2.0:/home/user/.config/gtkrc-2.0'), ('KWIN_X11_NO_SYNC_TO_VBLANK', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/nvidia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games'), ('SESSION_MANAGER', 'local/4dca70f7f8af:@/tmp/.ICE-unix/202,unix/4dca70f7f8af:/tmp/.ICE-unix/202'), ('DPI', '96'), ('XDG_RUNTIME_DIR', '/tmp/runtime-user'), ('XCURSOR_THEME', 'breeze_cursors'), ('DISPLAY', ':0'), ('PROMAGIC_USEGLX', '1'), ('LD_PRELOAD', 'libdlfaker.so:libvglfaker.so:/usr/local/lib/selkies-js-interposer/joystick_interposer.so'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'KDE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUPERVISOR_ENABLED', '1'), ('__GL_SYNC_TO_VBLANK', '0'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share/andino_gz/models'), ('KONSOLE_DBUS_SERVICE', ':1.297'), ('PASSWD', '47978827'), ('CDEPTH', '24'), ('SDL_JOYSTICK_DEVICE', '/dev/input/js0'), ('QT_IM_MODULE', 'fcitx'), ('SUPERVISOR_PROCESS_NAME', 'entrypoint'), ('PWD', '/home/user/exercises_ws/build/create_plan_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/home/user/.config/kdedefaults:/etc/xdg'), ('VGL_REFRESHRATE', '60'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('VGL_WM', '1'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('KWIN_COMPOSE', 'N'), ('TZ', 'UTC'), ('WEBRTC_ENCODER', 'nvh264enc'), ('KDE_SESSION_UID', '1000'), ('GEOPROBE_USEGLX', '1'), ('COLCON', '1'), ('ENABLE_BASIC_AUTH', 'true'), ('BASIC_AUTH_PASSWORD', '47978827'), ('SIZEH', '1080'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[6.553515] (create_plan_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.554465] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/ament_index/resource_index/rosidl_interfaces/create_plan_msgs\n'}
+[6.555284] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs\n'}
+[6.555527] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv\n'}
+[6.555727] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail\n'}
+[6.555904] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail/create_plan__struct.h\n'}
+[6.556125] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail/create_plan__functions.h\n'}
+[6.556361] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail/create_plan__type_support.h\n'}
+[6.556557] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail/create_plan__functions.c\n'}
+[6.556810] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/create_plan.h\n'}
+[6.557026] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/msg\n'}
+[6.557202] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.557615] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/environment/library_path.sh\n'}
+[6.558426] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/environment/library_path.dsv\n'}
+[6.558562] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/lib/libcreate_plan_msgs__rosidl_generator_c.so\n'}
+[6.558856] (create_plan_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/exercises_ws/install/create_plan_msgs/lib/libcreate_plan_msgs__rosidl_generator_c.so" to ""\n'}
+[6.559062] (create_plan_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs\n'}
+[6.559267] (create_plan_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv\n'}
+[6.559425] (create_plan_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail\n'}
+[6.559548] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail/create_plan__rosidl_typesupport_fastrtps_c.h\n'}
+[6.559775] (create_plan_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/msg\n'}
+[6.559868] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.560046] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/lib/libcreate_plan_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[6.560577] (create_plan_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/exercises_ws/install/create_plan_msgs/lib/libcreate_plan_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[6.560796] (create_plan_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs\n'}
+[6.561034] (create_plan_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv\n'}
+[6.561194] (create_plan_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail\n'}
+[6.561289] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail/create_plan__builder.hpp\n'}
+[6.561432] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail/create_plan__type_support.hpp\n'}
+[6.561560] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail/create_plan__traits.hpp\n'}
+[6.561812] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail/create_plan__struct.hpp\n'}
+[6.562034] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/create_plan.hpp\n'}
+[6.562256] (create_plan_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/msg\n'}
+[6.562399] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[6.562579] (create_plan_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs\n'}
+[6.562783] (create_plan_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv\n'}
+[6.563103] (create_plan_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail\n'}
+[6.563211] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail/dds_fastrtps\n'}
+[6.563420] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail/create_plan__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.563880] (create_plan_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/msg\n'}
+[6.564289] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.564607] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/lib/libcreate_plan_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.565166] (create_plan_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/exercises_ws/install/create_plan_msgs/lib/libcreate_plan_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[6.565341] (create_plan_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs\n'}
+[6.565494] (create_plan_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv\n'}
+[6.565697] (create_plan_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail\n'}
+[6.565808] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail/create_plan__type_support.c\n'}
+[6.565966] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail/create_plan__rosidl_typesupport_introspection_c.h\n'}
+[6.566178] (create_plan_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/msg\n'}
+[6.566319] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.566594] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/lib/libcreate_plan_msgs__rosidl_typesupport_introspection_c.so\n'}
+[6.567275] (create_plan_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/exercises_ws/install/create_plan_msgs/lib/libcreate_plan_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[6.567481] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/lib/libcreate_plan_msgs__rosidl_typesupport_c.so\n'}
+[6.567880] (create_plan_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/exercises_ws/install/create_plan_msgs/lib/libcreate_plan_msgs__rosidl_typesupport_c.so" to ""\n'}
+[6.568155] (create_plan_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs\n'}
+[6.568299] (create_plan_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv\n'}
+[6.568473] (create_plan_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail\n'}
+[6.568553] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail/create_plan__type_support.cpp\n'}
+[6.568731] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/include/create_plan_msgs/create_plan_msgs/srv/detail/create_plan__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.568955] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/lib/libcreate_plan_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[6.569583] (create_plan_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/exercises_ws/install/create_plan_msgs/lib/libcreate_plan_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[6.569909] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/lib/libcreate_plan_msgs__rosidl_typesupport_cpp.so\n'}
+[6.570411] (create_plan_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/exercises_ws/install/create_plan_msgs/lib/libcreate_plan_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[6.570566] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/environment/pythonpath.sh\n'}
+[6.570848] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/environment/pythonpath.dsv\n'}
+[6.571108] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs-0.0.0-py3.10.egg-info\n'}
+[6.571367] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[6.571607] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[6.571873] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[6.572091] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[6.572332] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs\n'}
+[6.572522] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/_create_plan_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.572780] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/_create_plan_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.573094] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/create_plan_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.573310] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/create_plan_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.573562] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/srv\n'}
+[6.574437] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/srv/_create_plan.py\n'}
+[6.574709] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/srv/_create_plan_s.c\n'}
+[6.574955] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/srv/__init__.py\n'}
+[6.575221] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/_create_plan_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[6.575564] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/__init__.py\n'}
+[6.575867] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/create_plan_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.576141] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/libcreate_plan_msgs__rosidl_generator_py.so\n'}
+[6.620062] (-) TimerEvent: {}
+[6.642037] (create_plan_msgs) StdoutLine: {'line': b"Listing '/home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs'...\n"}
+[6.642796] (create_plan_msgs) StdoutLine: {'line': b"Compiling '/home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/__init__.py'...\n"}
+[6.643083] (create_plan_msgs) StdoutLine: {'line': b"Listing '/home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/srv'...\n"}
+[6.643329] (create_plan_msgs) StdoutLine: {'line': b"Compiling '/home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/srv/__init__.py'...\n"}
+[6.643438] (create_plan_msgs) StdoutLine: {'line': b"Compiling '/home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/srv/_create_plan.py'...\n"}
+[6.649516] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/create_plan_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.651032] (create_plan_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/create_plan_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.653783] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/create_plan_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.654083] (create_plan_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/create_plan_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.654202] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/create_plan_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.654294] (create_plan_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages/create_plan_msgs/create_plan_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.654691] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/lib/libcreate_plan_msgs__rosidl_generator_py.so\n'}
+[6.654904] (create_plan_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/user/exercises_ws/install/create_plan_msgs/lib/libcreate_plan_msgs__rosidl_generator_py.so" to ""\n'}
+[6.655097] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/srv/CreatePlan.idl\n'}
+[6.655188] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/srv/CreatePlan.srv\n'}
+[6.655268] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/srv/CreatePlan_Request.msg\n'}
+[6.655540] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/srv/CreatePlan_Response.msg\n'}
+[6.655636] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/ament_index/resource_index/package_run_dependencies/create_plan_msgs\n'}
+[6.655828] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/ament_index/resource_index/parent_prefix_path/create_plan_msgs\n'}
+[6.655927] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/environment/ament_prefix_path.sh\n'}
+[6.656551] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/environment/ament_prefix_path.dsv\n'}
+[6.657003] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/environment/path.sh\n'}
+[6.657256] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/environment/path.dsv\n'}
+[6.657662] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/local_setup.bash\n'}
+[6.657873] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/local_setup.sh\n'}
+[6.658062] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/local_setup.zsh\n'}
+[6.658311] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/local_setup.dsv\n'}
+[6.658587] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/package.dsv\n'}
+[6.658964] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/ament_index/resource_index/packages/create_plan_msgs\n'}
+[6.659521] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/export_create_plan_msgs__rosidl_generator_cExport.cmake\n'}
+[6.659690] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/export_create_plan_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.660424] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/export_create_plan_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[6.660546] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/export_create_plan_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[6.660631] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/export_create_plan_msgs__rosidl_generator_cppExport.cmake\n'}
+[6.661035] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/export_create_plan_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[6.661140] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/export_create_plan_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[6.661433] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/create_plan_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.661837] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/create_plan_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.663894] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/create_plan_msgs__rosidl_typesupport_cExport.cmake\n'}
+[6.664023] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/create_plan_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.664277] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/create_plan_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.664378] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/create_plan_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.665084] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/create_plan_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[6.665208] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/create_plan_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.665391] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/export_create_plan_msgs__rosidl_generator_pyExport.cmake\n'}
+[6.665546] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/export_create_plan_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[6.665697] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[6.665871] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.666047] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.666158] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.666251] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.666335] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.666419] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.666502] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/create_plan_msgsConfig.cmake\n'}
+[6.666585] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake/create_plan_msgsConfig-version.cmake\n'}
+[6.666793] (create_plan_msgs) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/package.xml\n'}
+[6.670746] (create_plan_msgs) CommandEnded: {'returncode': 0}
+[6.710520] (create_plan_msgs) JobEnded: {'identifier': 'create_plan_msgs', 'rc': 0}
+[6.714666] (custom_nav2_planner) JobStarted: {'identifier': 'custom_nav2_planner'}
+[6.720133] (-) TimerEvent: {}
+[6.740012] (custom_nav2_planner) JobProgress: {'identifier': 'custom_nav2_planner', 'progress': 'cmake'}
+[6.742917] (custom_nav2_planner) Command: {'cmd': ['/usr/bin/cmake', '/home/user/exercises_ws/src/packages/custom_nav2_planner', '-DCMAKE_INSTALL_PREFIX=/home/user/exercises_ws/install/custom_nav2_planner'], 'cwd': '/home/user/exercises_ws/build/custom_nav2_planner', 'env': OrderedDict([('PROFILEHOME', ''), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VBOX_CROGL_FORCE_SUPPORTED', '1'), ('KDE_FULL_SESSION', 'true'), ('WEBRTC_ENABLE_RESIZE', 'false'), ('LANGUAGE', 'en_US:en'), ('USER', 'user'), ('SUPERVISOR_GROUP_NAME', 'entrypoint'), ('VGL_ISACTIVE', '1'), ('HOSTNAME', '4dca70f7f8af'), ('XDG_SESSION_TYPE', 'x11'), ('XCURSOR_SIZE', '24'), ('KONSOLE_VERSION', '211203'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/exercises_ws/install/create_plan_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/libreoffice/program:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('SHARED_FOLDER', '/home/user'), ('HOME', '/home/user'), ('REFRESH', '60'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('OLDPWD', '/home/user/exercises_ws/src/packages'), ('DESKTOP_SESSION', 'plasma'), ('XIM', 'fcitx'), ('ROS_PYTHON_VERSION', '3'), ('NOVNC_ENABLE', 'true'), ('SHELL_SESSION_ID', '8d6ac2dfb52e4caba4ce824bc7bffcec'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/user/.gtkrc:/home/user/.config/gtkrc'), ('SUDO_EDITOR', 'kate'), ('KDE_SESSION_VERSION', '5'), ('KONSOLE_DBUS_SESSION', '/Sessions/1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-L1H4FozHGd,guid=9202e9bd264c1e9f2802d2b6692b2fb6'), ('COLORTERM', 'truecolor'), ('KONSOLE_DBUS_WINDOW', '/Windows/1'), ('SIZEW', '1920'), ('COLCON_PREFIX_PATH', '/home/user/exercises_ws/install'), ('APPIMAGE_EXTRACT_AND_RUN', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('VGL_DISPLAY', 'egl'), ('WINDOWID', '81788935'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('PULSE_SERVER', 'unix:/run/pulse/native'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('COLORFGBG', '15;0'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/user/.gtkrc-2.0:/home/user/.config/gtkrc-2.0'), ('KWIN_X11_NO_SYNC_TO_VBLANK', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/nvidia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games'), ('SESSION_MANAGER', 'local/4dca70f7f8af:@/tmp/.ICE-unix/202,unix/4dca70f7f8af:/tmp/.ICE-unix/202'), ('DPI', '96'), ('XDG_RUNTIME_DIR', '/tmp/runtime-user'), ('XCURSOR_THEME', 'breeze_cursors'), ('DISPLAY', ':0'), ('PROMAGIC_USEGLX', '1'), ('LD_PRELOAD', 'libdlfaker.so:libvglfaker.so:/usr/local/lib/selkies-js-interposer/joystick_interposer.so'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'KDE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUPERVISOR_ENABLED', '1'), ('__GL_SYNC_TO_VBLANK', '0'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/home/user/exercises_ws/install/create_plan_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share/andino_gz/models'), ('KONSOLE_DBUS_SERVICE', ':1.297'), ('PASSWD', '47978827'), ('CDEPTH', '24'), ('SDL_JOYSTICK_DEVICE', '/dev/input/js0'), ('QT_IM_MODULE', 'fcitx'), ('SUPERVISOR_PROCESS_NAME', 'entrypoint'), ('PWD', '/home/user/exercises_ws/build/custom_nav2_planner'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/home/user/.config/kdedefaults:/etc/xdg'), ('VGL_REFRESHRATE', '60'), ('PYTHONPATH', '/home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('VGL_WM', '1'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('KWIN_COMPOSE', 'N'), ('TZ', 'UTC'), ('WEBRTC_ENCODER', 'nvh264enc'), ('KDE_SESSION_UID', '1000'), ('GEOPROBE_USEGLX', '1'), ('COLCON', '1'), ('ENABLE_BASIC_AUTH', 'true'), ('BASIC_AUTH_PASSWORD', '47978827'), ('SIZEH', '1080'), ('CMAKE_PREFIX_PATH', '/home/user/exercises_ws/install/create_plan_msgs:/opt/ros/humble')]), 'shell': False}
+[6.820436] (-) TimerEvent: {}
+[6.877626] (custom_nav2_planner) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[6.920602] (-) TimerEvent: {}
+[6.986814] (custom_nav2_planner) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[7.001302] (custom_nav2_planner) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[7.020755] (-) TimerEvent: {}
+[7.121227] (-) TimerEvent: {}
+[7.168682] (custom_nav2_planner) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[7.179418] (custom_nav2_planner) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[7.180187] (custom_nav2_planner) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[7.180773] (custom_nav2_planner) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[7.185749] (custom_nav2_planner) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.221363] (-) TimerEvent: {}
+[7.321866] (-) TimerEvent: {}
+[7.378884] (custom_nav2_planner) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[7.388976] (custom_nav2_planner) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[7.389249] (custom_nav2_planner) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[7.389876] (custom_nav2_planner) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[7.396218] (custom_nav2_planner) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[7.421953] (-) TimerEvent: {}
+[7.522426] (-) TimerEvent: {}
+[7.622886] (-) TimerEvent: {}
+[7.699609] (custom_nav2_planner) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[7.723093] (-) TimerEvent: {}
+[7.823576] (-) TimerEvent: {}
+[7.886469] (custom_nav2_planner) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[7.923739] (-) TimerEvent: {}
+[7.972334] (custom_nav2_planner) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[7.986663] (custom_nav2_planner) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[8.001194] (custom_nav2_planner) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[8.022361] (custom_nav2_planner) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.023823] (-) TimerEvent: {}
+[8.050875] (custom_nav2_planner) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.123994] (-) TimerEvent: {}
+[8.129551] (custom_nav2_planner) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[8.134503] (custom_nav2_planner) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[8.170536] (custom_nav2_planner) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[8.189038] (custom_nav2_planner) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[8.224154] (-) TimerEvent: {}
+[8.324646] (-) TimerEvent: {}
+[8.367536] (custom_nav2_planner) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[8.367940] (custom_nav2_planner) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[8.424772] (-) TimerEvent: {}
+[8.525200] (-) TimerEvent: {}
+[8.535469] (custom_nav2_planner) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.536635] (custom_nav2_planner) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.625468] (-) TimerEvent: {}
+[8.630688] (custom_nav2_planner) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.15 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[8.688701] (custom_nav2_planner) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.15 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[8.725669] (-) TimerEvent: {}
+[8.727737] (custom_nav2_planner) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[8.819473] (custom_nav2_planner) StdoutLine: {'line': b'-- Found nav2_util: 1.1.19 (/opt/ros/humble/share/nav2_util/cmake)\n'}
+[8.825764] (-) TimerEvent: {}
+[8.926196] (-) TimerEvent: {}
+[9.026726] (-) TimerEvent: {}
+[9.063880] (custom_nav2_planner) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[9.065728] (custom_nav2_planner) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[9.065888] (custom_nav2_planner) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[9.125891] (custom_nav2_planner) StdoutLine: {'line': b'-- Found nav2_costmap_2d: 1.1.19 (/opt/ros/humble/share/nav2_costmap_2d/cmake)\n'}
+[9.126792] (-) TimerEvent: {}
+[9.227135] (-) TimerEvent: {}
+[9.286292] (custom_nav2_planner) StdoutLine: {'line': b'-- Found nav2_core: 1.1.19 (/opt/ros/humble/share/nav2_core/cmake)\n'}
+[9.304998] (custom_nav2_planner) StdoutLine: {'line': b'-- Found create_plan_msgs: 0.0.0 (/home/user/exercises_ws/install/create_plan_msgs/share/create_plan_msgs/cmake)\n'}
+[9.327306] (-) TimerEvent: {}
+[9.427836] (-) TimerEvent: {}
+[9.516479] (custom_nav2_planner) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[9.527972] (-) TimerEvent: {}
+[9.628401] (-) TimerEvent: {}
+[9.676274] (custom_nav2_planner) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[9.677455] (custom_nav2_planner) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[9.678161] (custom_nav2_planner) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/user/exercises_ws/src/packages/custom_nav2_planner/include\n'}
+[9.678309] (custom_nav2_planner) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[9.679328] (custom_nav2_planner) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[9.679471] (custom_nav2_planner) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[9.680251] (custom_nav2_planner) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[9.682035] (custom_nav2_planner) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[9.682218] (custom_nav2_planner) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[9.682546] (custom_nav2_planner) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[9.686764] (custom_nav2_planner) StdoutLine: {'line': b'-- Configuring done\n'}
+[9.728584] (-) TimerEvent: {}
+[9.794832] (custom_nav2_planner) StdoutLine: {'line': b'-- Generating done\n'}
+[9.807704] (custom_nav2_planner) StdoutLine: {'line': b'-- Build files have been written to: /home/user/exercises_ws/build/custom_nav2_planner\n'}
+[9.827850] (custom_nav2_planner) CommandEnded: {'returncode': 0}
+[9.829098] (-) TimerEvent: {}
+[9.829989] (custom_nav2_planner) JobProgress: {'identifier': 'custom_nav2_planner', 'progress': 'build'}
+[9.830063] (custom_nav2_planner) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/exercises_ws/build/custom_nav2_planner', '--', '-j14', '-l14'], 'cwd': '/home/user/exercises_ws/build/custom_nav2_planner', 'env': OrderedDict([('PROFILEHOME', ''), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VBOX_CROGL_FORCE_SUPPORTED', '1'), ('KDE_FULL_SESSION', 'true'), ('WEBRTC_ENABLE_RESIZE', 'false'), ('LANGUAGE', 'en_US:en'), ('USER', 'user'), ('SUPERVISOR_GROUP_NAME', 'entrypoint'), ('VGL_ISACTIVE', '1'), ('HOSTNAME', '4dca70f7f8af'), ('XDG_SESSION_TYPE', 'x11'), ('XCURSOR_SIZE', '24'), ('KONSOLE_VERSION', '211203'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/exercises_ws/install/create_plan_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/libreoffice/program:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('SHARED_FOLDER', '/home/user'), ('HOME', '/home/user'), ('REFRESH', '60'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('OLDPWD', '/home/user/exercises_ws/src/packages'), ('DESKTOP_SESSION', 'plasma'), ('XIM', 'fcitx'), ('ROS_PYTHON_VERSION', '3'), ('NOVNC_ENABLE', 'true'), ('SHELL_SESSION_ID', '8d6ac2dfb52e4caba4ce824bc7bffcec'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/user/.gtkrc:/home/user/.config/gtkrc'), ('SUDO_EDITOR', 'kate'), ('KDE_SESSION_VERSION', '5'), ('KONSOLE_DBUS_SESSION', '/Sessions/1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-L1H4FozHGd,guid=9202e9bd264c1e9f2802d2b6692b2fb6'), ('COLORTERM', 'truecolor'), ('KONSOLE_DBUS_WINDOW', '/Windows/1'), ('SIZEW', '1920'), ('COLCON_PREFIX_PATH', '/home/user/exercises_ws/install'), ('APPIMAGE_EXTRACT_AND_RUN', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('VGL_DISPLAY', 'egl'), ('WINDOWID', '81788935'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('PULSE_SERVER', 'unix:/run/pulse/native'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('COLORFGBG', '15;0'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/user/.gtkrc-2.0:/home/user/.config/gtkrc-2.0'), ('KWIN_X11_NO_SYNC_TO_VBLANK', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/nvidia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games'), ('SESSION_MANAGER', 'local/4dca70f7f8af:@/tmp/.ICE-unix/202,unix/4dca70f7f8af:/tmp/.ICE-unix/202'), ('DPI', '96'), ('XDG_RUNTIME_DIR', '/tmp/runtime-user'), ('XCURSOR_THEME', 'breeze_cursors'), ('DISPLAY', ':0'), ('PROMAGIC_USEGLX', '1'), ('LD_PRELOAD', 'libdlfaker.so:libvglfaker.so:/usr/local/lib/selkies-js-interposer/joystick_interposer.so'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'KDE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUPERVISOR_ENABLED', '1'), ('__GL_SYNC_TO_VBLANK', '0'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/home/user/exercises_ws/install/create_plan_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share/andino_gz/models'), ('KONSOLE_DBUS_SERVICE', ':1.297'), ('PASSWD', '47978827'), ('CDEPTH', '24'), ('SDL_JOYSTICK_DEVICE', '/dev/input/js0'), ('QT_IM_MODULE', 'fcitx'), ('SUPERVISOR_PROCESS_NAME', 'entrypoint'), ('PWD', '/home/user/exercises_ws/build/custom_nav2_planner'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/home/user/.config/kdedefaults:/etc/xdg'), ('VGL_REFRESHRATE', '60'), ('PYTHONPATH', '/home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('VGL_WM', '1'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('KWIN_COMPOSE', 'N'), ('TZ', 'UTC'), ('WEBRTC_ENCODER', 'nvh264enc'), ('KDE_SESSION_UID', '1000'), ('GEOPROBE_USEGLX', '1'), ('COLCON', '1'), ('ENABLE_BASIC_AUTH', 'true'), ('BASIC_AUTH_PASSWORD', '47978827'), ('SIZEH', '1080'), ('CMAKE_PREFIX_PATH', '/home/user/exercises_ws/install/create_plan_msgs:/opt/ros/humble')]), 'shell': False}
+[9.929355] (-) TimerEvent: {}
+[9.969962] (custom_nav2_planner) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/custom_nav2_planner_plugin.dir/src/custom_nav2_planner.cpp.o\x1b[0m\n'}
+[10.029505] (-) TimerEvent: {}
+[10.130054] (-) TimerEvent: {}
+[10.230520] (-) TimerEvent: {}
+[10.330983] (-) TimerEvent: {}
+[10.431437] (-) TimerEvent: {}
+[10.531938] (-) TimerEvent: {}
+[10.632412] (-) TimerEvent: {}
+[10.732929] (-) TimerEvent: {}
+[10.833563] (-) TimerEvent: {}
+[10.934098] (-) TimerEvent: {}
+[11.034751] (-) TimerEvent: {}
+[11.135322] (-) TimerEvent: {}
+[11.236291] (-) TimerEvent: {}
+[11.336986] (-) TimerEvent: {}
+[11.437539] (-) TimerEvent: {}
+[11.538044] (-) TimerEvent: {}
+[11.638520] (-) TimerEvent: {}
+[11.738992] (-) TimerEvent: {}
+[11.839721] (-) TimerEvent: {}
+[11.940237] (-) TimerEvent: {}
+[12.040842] (-) TimerEvent: {}
+[12.141372] (-) TimerEvent: {}
+[12.241944] (-) TimerEvent: {}
+[12.342455] (-) TimerEvent: {}
+[12.443099] (-) TimerEvent: {}
+[12.543858] (-) TimerEvent: {}
+[12.644529] (-) TimerEvent: {}
+[12.745079] (-) TimerEvent: {}
+[12.845758] (-) TimerEvent: {}
+[12.946340] (-) TimerEvent: {}
+[13.046866] (-) TimerEvent: {}
+[13.147381] (-) TimerEvent: {}
+[13.247940] (-) TimerEvent: {}
+[13.348536] (-) TimerEvent: {}
+[13.449071] (-) TimerEvent: {}
+[13.549577] (-) TimerEvent: {}
+[13.650227] (-) TimerEvent: {}
+[13.750806] (-) TimerEvent: {}
+[13.851324] (-) TimerEvent: {}
+[13.951914] (-) TimerEvent: {}
+[14.052472] (-) TimerEvent: {}
+[14.152980] (-) TimerEvent: {}
+[14.253511] (-) TimerEvent: {}
+[14.354067] (-) TimerEvent: {}
+[14.454923] (-) TimerEvent: {}
+[14.555425] (-) TimerEvent: {}
+[14.655998] (-) TimerEvent: {}
+[14.756504] (-) TimerEvent: {}
+[14.857064] (-) TimerEvent: {}
+[14.957517] (-) TimerEvent: {}
+[15.058026] (-) TimerEvent: {}
+[15.158608] (-) TimerEvent: {}
+[15.259267] (-) TimerEvent: {}
+[15.359801] (-) TimerEvent: {}
+[15.460254] (-) TimerEvent: {}
+[15.560730] (-) TimerEvent: {}
+[15.661203] (-) TimerEvent: {}
+[15.761668] (-) TimerEvent: {}
+[15.862215] (-) TimerEvent: {}
+[15.962737] (-) TimerEvent: {}
+[16.063242] (-) TimerEvent: {}
+[16.163720] (-) TimerEvent: {}
+[16.264229] (-) TimerEvent: {}
+[16.364705] (-) TimerEvent: {}
+[16.465221] (-) TimerEvent: {}
+[16.565899] (-) TimerEvent: {}
+[16.666357] (-) TimerEvent: {}
+[16.766811] (-) TimerEvent: {}
+[16.867271] (-) TimerEvent: {}
+[16.967793] (-) TimerEvent: {}
+[17.068240] (-) TimerEvent: {}
+[17.168788] (-) TimerEvent: {}
+[17.269243] (-) TimerEvent: {}
+[17.369796] (-) TimerEvent: {}
+[17.470309] (-) TimerEvent: {}
+[17.570854] (-) TimerEvent: {}
+[17.671417] (-) TimerEvent: {}
+[17.771934] (-) TimerEvent: {}
+[17.872462] (-) TimerEvent: {}
+[17.972972] (-) TimerEvent: {}
+[18.073599] (-) TimerEvent: {}
+[18.174192] (-) TimerEvent: {}
+[18.274731] (-) TimerEvent: {}
+[18.375255] (-) TimerEvent: {}
+[18.475788] (-) TimerEvent: {}
+[18.576338] (-) TimerEvent: {}
+[18.676911] (-) TimerEvent: {}
+[18.777683] (-) TimerEvent: {}
+[18.878162] (-) TimerEvent: {}
+[18.950148] (custom_nav2_planner) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_nav2_planner_plugin.so\x1b[0m\n'}
+[18.978282] (-) TimerEvent: {}
+[19.078756] (-) TimerEvent: {}
+[19.179244] (-) TimerEvent: {}
+[19.279744] (-) TimerEvent: {}
+[19.380199] (-) TimerEvent: {}
+[19.459411] (custom_nav2_planner) StdoutLine: {'line': b'[100%] Built target custom_nav2_planner_plugin\n'}
+[19.480355] (-) TimerEvent: {}
+[19.482742] (custom_nav2_planner) CommandEnded: {'returncode': 0}
+[19.484007] (custom_nav2_planner) JobProgress: {'identifier': 'custom_nav2_planner', 'progress': 'install'}
+[19.484384] (custom_nav2_planner) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/user/exercises_ws/build/custom_nav2_planner'], 'cwd': '/home/user/exercises_ws/build/custom_nav2_planner', 'env': OrderedDict([('PROFILEHOME', ''), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VBOX_CROGL_FORCE_SUPPORTED', '1'), ('KDE_FULL_SESSION', 'true'), ('WEBRTC_ENABLE_RESIZE', 'false'), ('LANGUAGE', 'en_US:en'), ('USER', 'user'), ('SUPERVISOR_GROUP_NAME', 'entrypoint'), ('VGL_ISACTIVE', '1'), ('HOSTNAME', '4dca70f7f8af'), ('XDG_SESSION_TYPE', 'x11'), ('XCURSOR_SIZE', '24'), ('KONSOLE_VERSION', '211203'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/user/exercises_ws/install/create_plan_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/libreoffice/program:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('SHARED_FOLDER', '/home/user'), ('HOME', '/home/user'), ('REFRESH', '60'), ('KDE_APPLICATIONS_AS_SCOPE', '1'), ('OLDPWD', '/home/user/exercises_ws/src/packages'), ('DESKTOP_SESSION', 'plasma'), ('XIM', 'fcitx'), ('ROS_PYTHON_VERSION', '3'), ('NOVNC_ENABLE', 'true'), ('SHELL_SESSION_ID', '8d6ac2dfb52e4caba4ce824bc7bffcec'), ('GTK_RC_FILES', '/etc/gtk/gtkrc:/home/user/.gtkrc:/home/user/.config/gtkrc'), ('SUDO_EDITOR', 'kate'), ('KDE_SESSION_VERSION', '5'), ('KONSOLE_DBUS_SESSION', '/Sessions/1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:abstract=/tmp/dbus-L1H4FozHGd,guid=9202e9bd264c1e9f2802d2b6692b2fb6'), ('COLORTERM', 'truecolor'), ('KONSOLE_DBUS_WINDOW', '/Windows/1'), ('SIZEW', '1920'), ('COLCON_PREFIX_PATH', '/home/user/exercises_ws/install'), ('APPIMAGE_EXTRACT_AND_RUN', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('VGL_DISPLAY', 'egl'), ('WINDOWID', '81788935'), ('QT_AUTO_SCREEN_SCALE_FACTOR', '0'), ('PULSE_SERVER', 'unix:/run/pulse/native'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('COLORFGBG', '15;0'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('GTK2_RC_FILES', '/etc/gtk-2.0/gtkrc:/home/user/.gtkrc-2.0:/home/user/.config/gtkrc-2.0'), ('KWIN_X11_NO_SYNC_TO_VBLANK', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/nvidia/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games'), ('SESSION_MANAGER', 'local/4dca70f7f8af:@/tmp/.ICE-unix/202,unix/4dca70f7f8af:/tmp/.ICE-unix/202'), ('DPI', '96'), ('XDG_RUNTIME_DIR', '/tmp/runtime-user'), ('XCURSOR_THEME', 'breeze_cursors'), ('DISPLAY', ':0'), ('PROMAGIC_USEGLX', '1'), ('LD_PRELOAD', 'libdlfaker.so:libvglfaker.so:/usr/local/lib/selkies-js-interposer/joystick_interposer.so'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'KDE'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'KDE'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SUPERVISOR_ENABLED', '1'), ('__GL_SYNC_TO_VBLANK', '0'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/home/user/exercises_ws/install/create_plan_msgs:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share/andino_gz/models'), ('KONSOLE_DBUS_SERVICE', ':1.297'), ('PASSWD', '47978827'), ('CDEPTH', '24'), ('SDL_JOYSTICK_DEVICE', '/dev/input/js0'), ('QT_IM_MODULE', 'fcitx'), ('SUPERVISOR_PROCESS_NAME', 'entrypoint'), ('PWD', '/home/user/exercises_ws/build/custom_nav2_planner'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/home/user/.config/kdedefaults:/etc/xdg'), ('VGL_REFRESHRATE', '60'), ('PYTHONPATH', '/home/user/exercises_ws/install/create_plan_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('VGL_WM', '1'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('KWIN_COMPOSE', 'N'), ('TZ', 'UTC'), ('WEBRTC_ENCODER', 'nvh264enc'), ('KDE_SESSION_UID', '1000'), ('GEOPROBE_USEGLX', '1'), ('COLCON', '1'), ('ENABLE_BASIC_AUTH', 'true'), ('BASIC_AUTH_PASSWORD', '47978827'), ('SIZEH', '1080'), ('CMAKE_PREFIX_PATH', '/home/user/exercises_ws/install/create_plan_msgs:/opt/ros/humble')]), 'shell': False}
+[19.502602] (custom_nav2_planner) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.503387] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/global_planner_plugin.xml\n'}
+[19.503851] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/lib/libcustom_nav2_planner_plugin.so\n'}
+[19.506770] (custom_nav2_planner) StdoutLine: {'line': b'-- Set runtime path of "/home/user/exercises_ws/install/custom_nav2_planner/lib/libcustom_nav2_planner_plugin.so" to ""\n'}
+[19.506993] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/include/\n'}
+[19.507096] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/include//custom_nav2_planner\n'}
+[19.507309] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/include//custom_nav2_planner/custom_nav2_planner.hpp\n'}
+[19.507432] (custom_nav2_planner) StdoutLine: {'line': b'-- Up-to-date: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/global_planner_plugin.xml\n'}
+[19.507567] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/environment/library_path.sh\n'}
+[19.507666] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/environment/library_path.dsv\n'}
+[19.507817] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/ament_index/resource_index/package_run_dependencies/custom_nav2_planner\n'}
+[19.508051] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/ament_index/resource_index/parent_prefix_path/custom_nav2_planner\n'}
+[19.508226] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/environment/ament_prefix_path.sh\n'}
+[19.508403] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/environment/ament_prefix_path.dsv\n'}
+[19.508562] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/environment/path.sh\n'}
+[19.508972] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/environment/path.dsv\n'}
+[19.509185] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/local_setup.bash\n'}
+[19.509410] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/local_setup.sh\n'}
+[19.510478] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/local_setup.zsh\n'}
+[19.510709] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/local_setup.dsv\n'}
+[19.510881] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/package.dsv\n'}
+[19.511218] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/ament_index/resource_index/packages/custom_nav2_planner\n'}
+[19.511450] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/ament_index/resource_index/nav2_core__pluginlib__plugin/custom_nav2_planner\n'}
+[19.511707] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[19.511885] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[19.512074] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[19.512247] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/cmake/custom_nav2_plannerConfig.cmake\n'}
+[19.512381] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/cmake/custom_nav2_plannerConfig-version.cmake\n'}
+[19.512545] (custom_nav2_planner) StdoutLine: {'line': b'-- Installing: /home/user/exercises_ws/install/custom_nav2_planner/share/custom_nav2_planner/package.xml\n'}
+[19.516164] (custom_nav2_planner) CommandEnded: {'returncode': 0}
+[19.537676] (custom_nav2_planner) JobEnded: {'identifier': 'custom_nav2_planner', 'rc': 0}
+[19.539282] (-) EventReactorShutdown: {}

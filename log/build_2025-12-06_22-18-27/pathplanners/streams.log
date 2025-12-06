@@ -1,0 +1,31 @@
+[1.100s] Invoking command in '/home/user/exercises_ws/build/pathplanners': CMAKE_PREFIX_PATH=/home/user/exercises_ws/install/create_plan_msgs:/home/user/exercises_ws/install/custom_nav2_planner LD_LIBRARY_PATH=/home/user/exercises_ws/install/create_plan_msgs/lib:/home/user/exercises_ws/install/custom_nav2_planner/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/libreoffice/program:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 PYTHONPATH=/home/user/exercises_ws/build/pathplanners/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/exercises_ws/install/pathplanners/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/user/exercises_ws/build/pathplanners/build --no-deps symlink_data
+[1.583s] running develop
+[1.876s] running egg_info
+[1.876s] creating pathplanners.egg-info
+[1.876s] writing pathplanners.egg-info/PKG-INFO
+[1.876s] writing dependency_links to pathplanners.egg-info/dependency_links.txt
+[1.876s] writing entry points to pathplanners.egg-info/entry_points.txt
+[1.877s] writing requirements to pathplanners.egg-info/requires.txt
+[1.877s] writing top-level names to pathplanners.egg-info/top_level.txt
+[1.877s] writing manifest file 'pathplanners.egg-info/SOURCES.txt'
+[1.879s] reading manifest file 'pathplanners.egg-info/SOURCES.txt'
+[1.880s] writing manifest file 'pathplanners.egg-info/SOURCES.txt'
+[1.882s] running build_ext
+[1.882s] Creating /home/user/exercises_ws/install/pathplanners/lib/python3.10/site-packages/pathplanners.egg-link (link to .)
+[1.884s] Installing bfs script to /home/user/exercises_ws/install/pathplanners/lib/pathplanners
+[1.884s] Installing dijkstra script to /home/user/exercises_ws/install/pathplanners/lib/pathplanners
+[1.884s] Installing map_node script to /home/user/exercises_ws/install/pathplanners/lib/pathplanners
+[1.884s] Installing path_planner_node script to /home/user/exercises_ws/install/pathplanners/lib/pathplanners
+[1.884s] 
+[1.885s] Installed /home/user/exercises_ws/build/pathplanners
+[1.885s] running symlink_data
+[1.885s] creating /home/user/exercises_ws/install/pathplanners/share/ament_index
+[1.885s] creating /home/user/exercises_ws/install/pathplanners/share/ament_index/resource_index
+[1.885s] creating /home/user/exercises_ws/install/pathplanners/share/ament_index/resource_index/packages
+[1.885s] symbolically linking /home/user/exercises_ws/build/pathplanners/resource/pathplanners -> /home/user/exercises_ws/install/pathplanners/share/ament_index/resource_index/packages
+[1.885s] symbolically linking /home/user/exercises_ws/build/pathplanners/package.xml -> /home/user/exercises_ws/install/pathplanners/share/pathplanners
+[1.886s] creating /home/user/exercises_ws/install/pathplanners/share/pathplanners/launch
+[1.886s] symbolically linking /home/user/exercises_ws/build/pathplanners/launch/bringup.launch.py -> /home/user/exercises_ws/install/pathplanners/share/pathplanners/launch
+[1.886s] creating /home/user/exercises_ws/install/pathplanners/share/pathplanners/rviz
+[1.886s] symbolically linking /home/user/exercises_ws/build/pathplanners/rviz/visualizer.rviz -> /home/user/exercises_ws/install/pathplanners/share/pathplanners/rviz
+[1.938s] Invoked command in '/home/user/exercises_ws/build/pathplanners' returned '0': CMAKE_PREFIX_PATH=/home/user/exercises_ws/install/create_plan_msgs:/home/user/exercises_ws/install/custom_nav2_planner LD_LIBRARY_PATH=/home/user/exercises_ws/install/create_plan_msgs/lib:/home/user/exercises_ws/install/custom_nav2_planner/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/libreoffice/program:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 PYTHONPATH=/home/user/exercises_ws/build/pathplanners/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/exercises_ws/install/pathplanners/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/user/exercises_ws/build/pathplanners/build --no-deps symlink_data
