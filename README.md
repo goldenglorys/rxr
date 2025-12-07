@@ -1,250 +1,324 @@
-# Path-Planning-Algorithms-with-ROS2
+# Path Planning Algorithms for Andino Robot
 
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#About">About</a></li>
-    <li><a href="#Description-of-Algorithms">Description of Algorithms</a></li>
-    <li><a href="#Using-this-Project">Using this Project</a></li>
-  </ol>
-</details>
+Integrated path planning algorithms (BFS, Dijkstra, A*) with ROS 2 Nav2 for autonomous navigation of the Andino differential drive robot.
 
+[![ROS 2 Humble](https://img.shields.io/badge/ROS_2-Humble-blue)](https://docs.ros.org/en/humble/)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 
-**ToDo:**
+---
 
-- Potential function for the complex algo 
-    - Explore neighbors
-        - Takes a node and returns all its neighbor
-- Should this be encapsulated in base Algorithm class?
+## 📋 Table of Contents
 
-<!-- refer for psudocode
-https://www.youtube.com/watch?v=KiCBXu4P-2Y&list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P&index=6 -->
+- [Overview](#overview)
+- [Features](#features)
+- [System Architecture](#system-architecture)
+- [Algorithms](#algorithms)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Algorithm Comparison](#algorithm-comparison)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
+---
 
+## Overview
 
-## About
+This project implements three classical path planning algos. integrated with the ROS 2 Navigation Stack (Nav2) for the Andino robot.
 
-### Design aspects of system
+---
 
-Preliminary data such as map with obstacle, initial and goal position, common to all algorithms will be provided with node - `map_node`
+## Features
 
-Each algorithms can be executed using its own python node.
+- **Multiple Algorithms:** BFS, Dijkstra, and A* pathfinding implementations
+- **Nav2 Integration:** Custom planner plugin with seamless Nav2 compatibility
+- **Real-time Obstacle Avoidance:** Uses global costmap for collision-free planning
+- **Runtime Algorithm Selection:** Switch algorithms via ROS 2 parameters
+- **Modular Architecture:** Easy to extend with new algorithms
 
-Complex algorithms which requires functionalities present in simpler can be derived easily as the codebase it OOP based.
+---
 
-<p align="center">
-	<b>PlayGround</b>
-</p>
-<p align="center">
-	<img src="media/playground.png" width="500" height="500"/>
-</p>
+## System Srch
 
-
-**bringup.launch.py**
-
-```python
-Launches rviz2 for visualization of algorithms and 
-         map_node which provided the preliminary data
+```
+┌─────────────────┐
+│   User (RViz)   │ ← 2D Pose Estimate / Nav2 Goal
+└────────┬────────┘
+         │
+         ↓
+┌─────────────────┐
+│ Nav2 Planner    │
+│    Server       │
+└────────┬────────┘
+         │
+         ↓
+┌─────────────────┐
+│  C++ Custom     │ ← Calls CreatePlan service
+│  Nav2 Plugin    │
+└────────┬────────┘
+         │
+         ↓
+┌─────────────────┐
+│  Python Planner │ ← Runs selected algorithm
+│      Node        │    (A*, Dijkstra, BFS)
+└────────┬────────┘
+         │
+         ↓
+┌─────────────────┐
+│   Path Result   │ → Returns to Nav2 Controller
+└─────────────────┘
 ```
 
-**map_node**
+**Communication:** Service-based architecture decouples C++ plugin from Python algorithms.
 
-```python
-Has the preliminary map defined.
-Publishes 
-    Map with obstacles
-    initial and goal pose embedded within the map
-
-    map data is first stored in 2d matrix represented as x, y
-
-Instead of adjacency list, the preliminary map is transmitted.
-    
-Serves service `get_map` requested by individual algorithms for preliminary map.
-Since this wont be changing over time and will be required only once service has been used,
-instead of topic.
-```
-
-**algo_nodes**
-
-```python
-Waits for the GetMap service and requests the service for map with obstacles with initial and goal pose.
-Instead of using sync service, using a flag to wait for the response.
-
-Service callback method converts the data into 2D matrix for manipulation.
-
-Within the timer loop BFS traversal is performed and each node is marked visited denoted in the map itself. 
-After each iteration of master loop color of visited cells is increased in spectrum for visualization.
-
-Path is back tracked using `parent` attribute and path is generated.
-```
-
-
-### Color Scheme of CostMap: 
-
-```python
--128 to -2 => RED to YELLOW
--1         => GREY
-0          => BLACK
-1 to 98    => BLUE to RED
-99         => CYAN
-100        => PINK
-101 to 127 => GREEN
-```
-
-```python
-YELLOW => START POINT
-BLUE   => END POINT
-GREEN  => GENERATED PATH
-Explored area has a gradient from YELLOW to BLUE for each iteration.
-```
+---
 
 ## Algorithms
 
-### Fundamentals
+### Breadth-First Search (BFS)
 
-<p align="center">
-	<b>Breadth First Search</b>
-</p>
+- **Type:** Uninformed search
+- **Optimality:** Unweighted shortest path
+- **Complexity:** O(V + E)
+- **Best for:** Simple environments, educational purposes
 
-<p align="center">
-	<img src="/media/bfs_b.gif" width="536" height="584"/>
-</p>
+### Dijkstra's Algorithm
 
+- **Type:** Weighted shortest path
+- **Optimality:** Guaranteed optimal
+- **Complexity:** O((V + E) log V)
+- **Best for:** When optimality is critical, uniform costs
 
-```python
-Explores the neighbor nodes first, before moving to the next level of neighbors.
-Utilizes queue to store the node yet to be visited.
-```
-<p align="center">
-	<b>Depth First Search</b>
-</p>
+### A* (A-Star)
 
-```python
-Plunges depth first into a graph without regard for which edge it take next
-until it cannot go further at which point it backtracks and continues.
-```
+- **Type:** Informed search with heuristic
+- **Optimality:** Optimal (with admissible heuristic)
+- **Complexity:** O(b^d)
+- **Heuristic:** Manhattan distance (4-directional movement)
+- **Best for:** Production use - fast and optimal
 
-<p align="center">
-	<b>Minimal Spanning Tree</b>
-</p>
+**Performance Comparison:**
 
+| Algorithm | Path Quality | Speed | Memory |
+|-----------|--------------|-------|--------|
+| BFS | Good | Fast | High |
+| Dijkstra | Optimal | Slow | High |
+| A* | Optimal | **Fastest** | Medium |
 
+---
 
-### Grid-based search algorithms
-- dijkstra
-- greedy
-- A*
-- D*
-- Uniform Cost Search
-- Best-First Searching
-- A*
-- Bidirectional A*
-- Anytime Repairing A*
-- Learning Real-time A* (LRTA*)
-- Real-time Adaptive A* (RTAA*)
-- Lifelong Planning A* (LPA*)
-- Dynamic A* (D*)
-- D* Lite
-- Anytime D*
--  Dynamic Window Approach.
+## Installation
 
-### Sampling-based search algorithms
-- Rapidly-Exploring Random Trees RRT
-- RRT*
-- Probabilistic Roadmap (PRM)
-- RRT
-- RRT-Connect
-- Extended-RRT
-- Dynamic-RRT
-- RRT*
-- Informed RRT*
-- RRT* Smart
-- Anytime RRT*
-- Closed-Loop RRT*
-- Spline-RRT*
-- Fast Marching Trees (FMT*)
-- Batch Informed Trees (BIT*)
+### Prerequisites
 
-### Potential Field Algorithms
+- **OS:** Ubuntu 22.04 LTS
+- **ROS 2:** Humble
+- **Python:** 3.10+
+- **Additional:**
+  - Nav2 Navigation Stack
+  - Andino simulation packages
+  - Gazebo
 
-- Artificial Potential Field (APF)
+### Install ROS 2 and Dependencies
 
-### Cell Decomposition Algorithms:
+```bash
+# Install ROS 2 Humble
+sudo apt update
+sudo apt install ros-humble-desktop -y
 
-- Voronoi Diagrams
-- Visibility Graphs: 
+# Install Andino packages
+sudo apt install ros-humble-andino-gz -y
 
-## Optimal Control Algorithms:
+# Install Nav2
+sudo apt install ros-humble-navigation2 -y
+sudo apt install ros-humble-nav2-simple-commander -y
 
-- Trajectory Optimization
-- Model Predictive Control (MPC)
-
-### Search-Based Algorithms:
-
- -Probabilistic Graph Search
-- Anytime Algorithm
-
-### Sampling-Based Hybrid Methods:
-
-- PRM* (Probabilistic Roadmap Star)
-- Informed RRT*
-
-## Using this Project
-
-Move into your workspace's src folder
-```
-cd ~/ros2_ws/src
-```
-Clone the project
-```
-git clone
-```
-Build the project.
-```
-cd ~/ros2_ws && colcon build
+# Install additional tools
+sudo apt install python3-pip -y
+pip3 install numpy transforms3d
 ```
 
-Launch rviz2 and map_node using bringup launch file
+### Build the Project
+
+```bash
+# Create workspace
+mkdir -p ~/exercises_ws/src
+cd ~/exercises_ws/src
+
+# Clone repository
+git clone https://github.com/goldenglorys/rxr.git
+
+# Build packages
+cd ~/exercises_ws
+colcon build --symlink-install
+
+# Source workspace
+source install/setup.bash
 ```
-ros2 launch pathplanners bringup.launch.py
+
+### Verify Installation
+
+```bash
+# Check packages
+ros2 pkg list | grep -E "create_plan|custom_nav2|pathplanners"
+
+# Expected output:
+# create_plan_msgs
+# custom_nav2_planner
+# pathplanners
 ```
 
-To see individual algorithms in action, run individual scripts.
+---
+
+## Usage
+
+### Quick Start
+
+**Terminal 1 - Launch Simulation:**
+
+```bash
+source ~/exercises_ws/install/setup.bash
+ros2 launch andino_gz andino_gz.launch.py nav2:=True
 ```
-ros2 run pathplanners <algorithm_name>
+
+**Terminal 2 - Run Path Planner:**
+
+```bash
+source ~/exercises_ws/install/setup.bash
+ros2 run pathplanners path_planner_node \
+  --ros-args \
+  -p use_sim_time:=True \
+  -p algorithm:=astar
 ```
 
-Executable list
+### RViz Configuration
 
-```python
-- bfs
+1. **Set Fixed Frame:** Change to `map` (top-left panel)
+2. **Add Map Display:**
+   - Click "Add" → "Map"
+   - Topic: `/map`
+3. **Add Path Display:**
+   - Click "Add" → "Path"
+   - Topic: `/plan`
+   - Color: Green or Red (for visibility)
+4. **Set Initial Pose:**
+   - Click "2D Pose Estimate" toolbar button
+   - Click on map where robot is located
+5. **Send Navigation Goal:**
+   - Click "Nav2 Goal" toolbar button
+   - Click destination on map
+   - Robot will plan and execute path!
+
+### Algorithm Selection
+
+**A(star) Algorithm :**
+
+```bash
+ros2 run pathplanners path_planner_node \
+  --ros-args -p use_sim_time:=True -p algorithm:=astar
 ```
-Replace these with <algorithm_name> to run the specific algorithm
 
+**Dijkstra Algorithm :**
 
-## SiteMap
+```bash
+ros2 run pathplanners path_planner_node \
+  --ros-args -p use_sim_time:=True -p algorithm:=dijkstra
+```
 
-```python
-├── launch
-│   └── bringup.launch.py
+**BFS Algorithm :**
+
+```bash
+ros2 run pathplanners path_planner_node \
+  --ros-args -p use_sim_time:=True -p algorithm:=bfs
+```
+
+---
+
+## Project Structure
+
+```
+rxr/
+├── src/
+│   ├── packages/
+│   │   ├── create_plan_msgs/              # Custom service definition
+│   │   │   ├── srv/
+│   │   │   │   └── CreatePlan.srv         # Start + Goal → Path
+│   │   │   ├── CMakeLists.txt
+│   │   │   └── package.xml
+│   │   │
+│   │   └── custom_nav2_planner/           # C++ Nav2 plugin
+│   │       ├── src/
+│   │       │   └── custom_nav2_planner.cpp
+│   │       ├── include/
+│   │       │   └── custom_nav2_planner/
+│   │       │       └── custom_nav2_planner.hpp
+│   │       ├── global_planner_plugin.xml  # Plugin description
+│   │       ├── CMakeLists.txt
+│   │       └── package.xml
+│   │
+│   └── pathplanners/                       # Main Python package
+│       ├── pathplanners/
+│       │   ├── nav2_planner.py            # Service server + main node
+│       │   ├── astar.py                   # A* implementation
+│       │   ├── dijkstra.py                # Dijkstra implementation
+│       │   ├── breadthfirstsearch.py      # BFS implementation
+│       │   ├── utils.py                   # Coordinate conversions
+│       │   └── __init__.py
+│       ├── launch/
+│       │   └── bringup.launch.py          # Launch file
+│       ├── test/                          # Unit tests
+│       │   ├── test_copyright.py
+│       │   ├── test_flake8.py
+│       │   └── test_pep257.py
+│       ├── package.xml
+│       ├── setup.py
+│       ├── setup.cfg
+│       └── README.md
 │
-├── media
-│   ├── bfs.gif
-│   ├── bfs.webm
-│   └── playground.png
-│
-├── pathplanners
-│   ├── breadthfirstsearch.py
-│   ├── __init__.py
-│   ├── map.py
-│
-├── rviz
-│   └── visualizer.rviz
-│
-├── README.md
-│
-├── package.xml
-├── setup.cfg
-└── setup.py
-
+├── build/                                  # Build artifacts
+├── install/                                # Installed packages
+├── log/                                    # Build logs
 ```
+
+---
+
+## Development
+
+### Adding New Algorithms
+
+1. Create new file in `pathplanners/` (e.g., `rrt_star.py`)
+2. Implement function with signature:
+
+   ```python
+   def rrt_star(grid, start, goal):
+       """Your algorithm here"""
+       return path_coords  # List of (x, y) tuples
+   ```
+
+3. Import in `nav2_planner.py`:
+
+   ```python
+   from pathplanners.rrt_star import rrt_star
+   ```
+
+4. Add to algorithm selection:
+
+   ```python
+   elif self.algorithm == 'rrt_star':
+       path_coords = rrt_star(grid, start_grid, goal_grid)
+   ```
+
+5. Update `setup.py` if needed
+
+<!-- --- -->
+
+<!-- <div align="center">
+
+**⭐ Star this repository if you find it helpful! ⭐**
+
+[![GitHub stars](https://img.shields.io/github/stars/goldenglorys/rxr?style=social)](https://github.com/goldenglorys/rxr/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/goldenglorys/rxr?style=social)](https://github.com/goldenglorys/rxr/network/members)
+
+</div> -->
